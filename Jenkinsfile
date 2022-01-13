@@ -13,6 +13,7 @@ pipeline {
 				script {
 					docker.build("${DOCKER_HUB_USER}/${DOCKER_HUB_REP}:${DOCKER_HUB_VERSION}"
 				}
+				echo 'Building is done'
             }
         }
         stage('Test') {
